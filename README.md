@@ -2,11 +2,19 @@
 
 Welcome to Acebook - our social media application! 
 
-In this team challenge we began with an existing 'bare-bones' Express / Node app. First we needed to assess what we had, and decide how to turn it into the app we wanted. 
+This team challenge began with an existing 'bare-bones' Express / Node app. The first thing we needed to do was assess what we had, and decide how to turn it into the app we wanted. 
 
-We used Miro to diagram user interaction and flow for the existing app, and for our desired app. This enabled us to work out what steps would be necessary to develop our desired application. We developed the application using agile processes and discrete tasks as tickets in Trello. This way we could track our daily progress and plan each sprint cycle to bring towards the result you see here.
+We used Miro to help us plan our Minimum Viable Product, and define our first sprint. Diagrams show user interaction and flow for the existing app, and for our desired app. 
 
-https://trello.com/b/6iSfl10V/the-axylotls-acebook
+!["Image of our first sprint plan"](/readme-images/first-iteration.png "Our first iteration in Miro")
+
+The plans enabled us to work out what steps would be necessary to develop our desired application. We developed the application using agile methodology, with discrete tasks as tickets in Trello.
+
+!["Image of our Trello Board"](/readme-images/the-axylotls-acebook-trello.png "Our Trello Board")
+
+This way we could track our daily progress and plan each sprint cycle to bring us towards the result you see in branch `main` of this repo.
+
+!["Image of our second sprint plan"](/readme-images/second-iteration.png "Our second iteration in Miro")
 
 ## Get started
 
