@@ -2,10 +2,6 @@
 <div class="header">
   <div class="header__left">
     <a href="/posts"><img src="images/acebook_logo.svg" alt="" /></a>
-    {{!-- <div class="header__input">
-      <span class="material-icons"> search </span>
-      <input type="text" placeholder="Search Acebook" />
-    </div> --}}
   </div>
 
   <div class="header__middle">
@@ -21,23 +17,23 @@
 
     <span class="material-icons">
       <form action='/sessions?_method=DELETE' method='POST'>
-          <button id="logout" type="submit"><span class="material-icons">logout</span></button>
-        </form>
+        <button id="logout" type="submit"><span class="material-icons">logout</span></button>
+      </form>
     </span>
   </div>
 </div>
 
 <div class="post">
   <div class="profile_img">
-  <img id="profile_pic" src="data:;base64, {{profilePic.data}}" alt=""/>
+    <img id="profile_pic" src="data:;base64, {{profilePic.data}}" alt="" />
   </div>
   <div class="post__bottom">
-  <ul>
-    <li>First name: {{firstName}}</li>
-    <li>Last name: {{lastName}}</li>
-    <li>Email: {{email}}</li>
-    <li>Password: {{password}}</li>
-  </ul>
+    <ul>
+      <li>First name: {{firstName}}</li>
+      <li>Last name: {{lastName}}</li>
+      <li>Email: {{email}}</li>
+      <li>Password: {{password}}</li>
+    </ul>
   </div>
   <div class="profile_edit_details">
     <a id="edit-page" href="/profile/edit">Edit your details</a>

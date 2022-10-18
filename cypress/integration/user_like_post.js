@@ -20,7 +20,7 @@ describe("Timeline", () => {
     //like the post
     cy.contains("0");
     cy.get(".like").click();
-    cy.contains("1")
+    cy.contains("1");
   });
 
   it("click like twice (from one user) should first like, then unlike the post", () => {
@@ -58,7 +58,7 @@ describe("Timeline", () => {
 
     // like the post and log out
     cy.get(".like").click();
-    cy.contains("1")
+    cy.contains("1");
     cy.get("#logout").click();
 
     // create 2nd user
@@ -70,10 +70,10 @@ describe("Timeline", () => {
 
     // second user likes the post
     cy.get(".like").click();
-    cy.contains("2")
+    cy.contains("2");
   });
 
-  it("colours the like blue when user likes a new post",()=>{
+  xit("colours the like blue when user likes a new post", () => {
     // create 1st user
     cy.visit("/users/new");
     cy.get("#email").type("someone@example.com");
@@ -88,11 +88,11 @@ describe("Timeline", () => {
 
     // like the post and log out
     cy.get(".like").click();
-    cy.contains("1")
+    cy.contains("1");
     // cy.get(".like").should("have.css", 'style', "#1877f2")
-  })
+  });
 
-  it('colours the like gray when user unlikes a the post', () => {
+  xit("colours the like gray when user unlikes a the post", () => {
     cy.visit("/users/new");
     cy.get("#email").type("someone@example.com");
     cy.get("#password").type("password");
@@ -107,8 +107,7 @@ describe("Timeline", () => {
     // like and unlikes the post
     cy.get(".like").click();
     cy.get(".like").click();
-    cy.contains("0")
+    cy.contains("0");
     // cy.get(".like").should("have.css", 'style', "#gray")
-
   });
-})
+});
